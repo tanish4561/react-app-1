@@ -30,13 +30,11 @@ const Users = () => {
         {filteredUsers.length > 0 ? (
           filteredUsers.map((user) => (
             <li key={user.id} className="user-item">
-              <LazyLoad>
                 <img
                   src={`https://robohash.org/${user.id}?size=60x60`}
                   alt={user.name}
                   className="user-avatar"
                 />
-              </LazyLoad>
               <div className="user-info">
                 <span className="user-name">{user.name}</span>
                 <span className="user-email">{user.email}</span>
