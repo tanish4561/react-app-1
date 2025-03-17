@@ -1,0 +1,96 @@
+/* Users Container */
+.users-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  /* Heading */
+  .users-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 187, 0.5);
+  }
+  
+  /* Users List */
+  .users-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* User Item */
+  .user-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    gap: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .user-item:hover {
+    transform: scale(1.03);
+    background: #eef6ff;
+  }
+  
+  /* Avatar */
+  .user-avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #007bff;
+  }
+  
+  /* User Info */
+  .user-info {
+    text-align: left;
+  }
+  
+  .user-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .user-email {
+    display: block;
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  /* No Users Found */
+  .no-users {
+    font-size: 1.1rem;
+    color: red;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

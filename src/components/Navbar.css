@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment */
+  background: #121212;
+  padding: 15px 20px;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px; /* Matches content height */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  line-height: 1; /* Ensures no extra spacing */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Consistent font size */
+  padding: 8px 15px; /* Consistent padding for all links */
+  border-radius: 5px; /* Rounded edges for hover effect */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+.nav-link:last-child {
+  background: #3478F6; /* Blue background for "Contact" button */
+  color: white;
+}
+
+.nav-link:last-child:hover {
+  background: #285ec4; /* Slightly darker blue on hover */
+}
+
+/* Fixes content getting hidden under navbar */
+body {
+  margin: 0; /* Removes default margin */
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack navbar content vertically */
+      align-items: flex-start; /* Align content to the left */
+      height: auto; /* Adjust height dynamically */
+      padding-bottom: 10px; /* Add spacing at the bottom */
+  }
+
+  .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Full width for mobile layout */
+      gap: 10px; /* Reduce gap between links */
+      align-items: flex-start; /* Align links to the left */
+      padding-left: 10px; /* Add left padding for spacing */
+  }
+
+  .nav-link:last-child {
+      align-self: flex-start; /* Align "Contact" button to the left */
+      width: fit-content; /* Prevent stretching on mobile screens */
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}

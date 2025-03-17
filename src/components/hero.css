@@ -1,0 +1,34 @@
+.hero-container {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: relative;
+    top: 30%;
+    text-align: center;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f04;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  

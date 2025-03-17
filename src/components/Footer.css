@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #282c34;
+    color: white;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  

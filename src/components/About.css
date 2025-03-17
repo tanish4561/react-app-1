@@ -1,0 +1,30 @@
+.about-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .about-card {
+    width: 300px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-card h3 {
+    color: #333;
+  }
+  
+  .about-card p {
+    color: #555;
+  }
+  
