@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LazyLoad from "react-lazyload";
+
 import "./Users.css"; // Importing the CSS
 
 const Users = () => {
